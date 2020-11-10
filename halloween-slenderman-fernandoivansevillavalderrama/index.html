@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slenderman Halloween Invitation</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script type="text/javascript" src="javascripts/js.js"></script>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <audio src="sonidos/bgsond.mp3" autoplay>
+            <p>If you are reading this, it is because your browser does not support the audio element.     </p>
+            <embed src="sonidos/bgsond.mp3" width="180" height="90" hidden="true" />
+            </audio>
+        <h1>Slenderman Halloween Invitation</h1>
+        <p id="p1">No   abras   la   nota</p>
+        
+        <audio id="noteSound" src="sonidos/noteSound.mp3"></audio>
+        <div id="divNotaCerrar" onmouseout="ocultarNota('nota'); mostrarp2('p2');"></div>
+        <img id="notaArbol" src="imagenes/nota-small.png">
+        <div id="divNotaArbol" onmouseover="mostrarNota('nota'); sonarNota('noteSound');" ></div>
+        <img id="slender1" src="imagenes/slenderman.png">
+        <div id="divGifSlender" onclick="mostrarGifSlender('gifSlender'); sonarSlender2Sound('Slender2Sound');" ></div>
+        <img id="nota" src="imagenes/nota.png">
+        <audio id="Slender1Sound" src="sonidos/slender1.mp3"></audio>
+        <p id="p2">No   pinches   la   palabra   SLENDERMAN</p>
+        <div id="divPalabraSlenderman" onclick="mostrarSlender1('slender1'); sonarSlender1Sound('Slender1Sound');" ></div>
+        <img id="gifSlender" src="imagenes/slenderman.gif" alt="slenderman"/>
+        <audio id="Slender2Sound" src="sonidos/slender2.mp3"></audio>
+    </div>
+</body>
+</html>
+
+
+
+<!--  -->
